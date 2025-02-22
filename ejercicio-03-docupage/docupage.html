@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta información para SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentación técnica sobre Git. Aprende a usar Git, clonar repositorios, trabajar con ramas y configurar tu entorno.">
+    <meta name="keywords" content="Git, documentación, comandos Git, repositorios, clonar, ramas, configuración Git, tutoriales Git">
+    <meta name="author" content="jareigfa">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Documentación sobre Git">
+    <meta property="og:description" content="Documentación técnica sobre Git. Aprende a usar Git, clonar repositorios, trabajar con ramas y configurar tu entorno.">
+    <meta property="og:image" content="https://git-scm.com/images/logos/downloads/Git-Logo-White.png">
+    <meta property="og:url" content="https://tusitio.com/documentacion-git">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Documentación sobre Git">
+    <meta name="twitter:description" content="Documentación técnica sobre Git. Aprende a usar Git, clonar repositorios, trabajar con ramas y configurar tu entorno.">
+    <meta name="twitter:image" content="https://git-scm.com/images/logos/downloads/Git-Logo-White.png">
+    
+    <title>Documentación sobre Git</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <nav id="navbar">
+        <header>
+            <img src="https://git-scm.com/images/logos/downloads/Git-Logo-White.png" alt="Git Logo" class="git-logo">
+            <h1>Documentación sobre Git</h1>
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#inicializar_un_repositorio">Inicializar un Repositorio</a></li>
+            <li><a class="nav-link" href="#clonar_un_repositorio">Clonar un Repositorio</a></li>
+            <li><a class="nav-link" href="#comandos_principales">Comandos Principales</a></li>
+            <li><a class="nav-link" href="#trabajar_con_ramas">Trabajar con Ramas</a></li>
+            <li><a class="nav-link" href="#repositorios_remotos">Repositorios Remotos</a></li>
+            <li><a class="nav-link" href="#configurar_git">Configurar Git</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main id="main-doc">
+        <section class="main-section" id="inicializar_un_repositorio">
+            <header>
+                <h2>Inicializar un Repositorio</h2>
+            </header>
+            <p>Para comenzar a usar Git en un proyecto, debes inicializar un repositorio con el siguiente comando:</p>
+            <pre><code>git init</code></pre><br>
+            <p>Este comando crea un nuevo repositorio en el directorio actual, permitiendo que Git empiece a gestionar el seguimiento de cambios.</p>
+            <p>Es una de las primeras acciones que debes hacer al iniciar un proyecto nuevo en Git.</p>
+            <p>También es útil para convertir un proyecto existente en un repositorio Git.</p>
+            <p>Recuerda que este comando solo afecta a tu directorio local, no crea una copia remota del repositorio.</p>
+        </section>
+
+        <section class="main-section" id="clonar_un_repositorio">
+            <header>
+                <h2>Clonar un Repositorio</h2>
+            </header>
+            <p>Si deseas obtener una copia de un repositorio existente, puedes clonar el repositorio remoto usando el siguiente comando:</p>
+            <pre><code>git clone <i>URL-del-repositorio</i></code></pre><br>
+            <p>Este comando crea una copia completa de un repositorio remoto en tu máquina local, incluyendo el historial de cambios.</p>
+            <p>Una vez clonado, podrás trabajar con el repositorio como si fuera uno local.</p>
+            <p>Este comando también configura automáticamente el repositorio remoto como origen de tu repositorio local.</p>
+        </section>
+
+        <section class="main-section" id="comandos_principales">
+            <header>
+                <h2>Comandos Principales</h2>
+            </header>
+            <ul>
+                <li>Ver el estado del repositorio:<br><pre><code>git status</code></pre></li>
+                <li>Añadir archivos al área de preparación:<br><pre><code>git add</code></pre></li>
+                <li>Confirmar cambios:<br><pre><code>git commit -m <i>"mensaje"</i></code></pre></li>
+                <li>Ver el historial de commits:<br><pre><code>git log</code></pre></li>
+                <li>Deshacer cambios:<br><pre><code>git checkout --</code></pre></li>
+            </ul><br>
+            <p>Estos son algunos de los comandos más comunes que utilizarás al trabajar con Git.</p>
+            <p>Es importante familiarizarse con ellos para poder manejar tu repositorio de manera eficiente.</p>
+            <p>Git también permite realizar otras acciones más complejas, como el rebasing o cherry-pick de commits.</p>
+        </section>
+
+        <section class="main-section" id="trabajar_con_ramas">
+            <header>
+                <h2>Trabajar con Ramas</h2>
+            </header>
+            <p>Las ramas permiten trabajar de forma aislada en distintas características de un proyecto sin afectar el código principal.</p>
+            <ul>
+                <li>Crear una nueva rama:<br><pre><code>git branch <i>nombre-de-la-rama</i></code></pre></li>
+                <li>Cambiar a una rama:<br><pre><code>git checkout <i>nombre-de-la-rama</i></code></pre></li>
+                <li>Fusionar ramas:<br><pre><code>git merge <i>nombre-de-la-rama</i></code></pre></li>
+                <li>Eliminar una rama:<br><pre><code>git branch -d <i>nombre-de-la-rama</i></code></pre></li>
+            </ul><br>
+            <p>Cuando creas una nueva rama, Git crea una copia del proyecto en ese punto específico.</p>
+            <p>Esto permite que puedas experimentar sin riesgo de afectar el código principal.</p>
+        </section>
+
+        <section class="main-section" id="repositorios_remotos">
+            <header>
+                <h2>Repositorios Remotos</h2>
+            </header>
+            <p>Git permite trabajar con repositorios alojados en servidores remotos para compartir trabajo entre diferentes colaboradores.</p>
+            <ul>
+                <li>Ver repositorios remotos:<br><pre><code>git remote -v</code></pre></li>
+                <li>Enviar cambios a un repositorio remoto:<br><pre><code>git push origin <nombre-de-la-rama></code></pre></li>
+                <li>Obtener cambios del repositorio remoto:<br><pre><code>git pull origin <nombre-de-la-rama></code></pre></li>
+            </ul><br>
+            <p>Cuando trabajas con repositorios remotos, puedes colaborar con otros desarrolladores, compartir cambios y actualizar tu copia local del repositorio.</p>
+        </section>
+
+        <section class="main-section" id="configurar_git">
+            <header>
+                <h2>Configurar Git</h2>
+            </header>
+            <p>Antes de comenzar a usar Git, es necesario configurar tu nombre y correo electrónico para asociarlos con tus commits.</p>
+            <ul>
+                <li>Configurar tu nombre:<br><pre><code>git config --global user.name <i>"Tu Nombre"</i></code></pre></li>
+                <li>Configurar tu correo:<br><pre><code>git config --global user.email <i>"tu-email@example.com"</i></code></pre></li>
+                <li>Ver la configuración actual:<br><pre><code>git config --list</code></pre></li>
+            </ul><br>
+            <p>Estas configuraciones son importantes ya que aseguran que tu identidad se registre correctamente en cada commit que realices.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Documentación Git by jareigfa</p>
+    </footer>
+
+</body>
+<!-- Test de prueba -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

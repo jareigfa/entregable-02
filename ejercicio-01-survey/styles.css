@@ -1,0 +1,159 @@
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#description {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+/* Contenido principal */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Estilo de las secciones */
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+#submit:hover {
+  background-color: #45a049;
+}
+
+/* Estilo de pie de página */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f1f1f1;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Media Query para tablets y laptops */
+@media (max-width: 1024px) {
+  main {
+    padding: 20px;
+  }
+
+  #title {
+    font-size: 2rem;
+  }
+
+  #submit {
+    font-size: 1.1rem;
+  }
+}
+
+/* Media Query para Desktop */
+@media (min-width: 1025px) {
+  main {
+    max-width: 800px;
+    padding: 30px;
+  }
+
+  #title {
+    font-size: 2.5rem;
+  }
+
+  #description {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .form {
+    font-size: 1.1rem;
+  }
+
+  #submit {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media Query para móviles */
+@media (max-width: 600px) {
+  main {
+    padding: 15px;
+  }
+
+  #title {
+    font-size: 1.8rem;
+  }
+
+  #description {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .form {
+    font-size: 0.9rem;
+  }
+
+  #submit {
+    font-size: 1rem;
+  }
+}

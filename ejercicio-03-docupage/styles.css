@@ -1,0 +1,237 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menú lateral */
+#navbar {
+    background-color: #2a2a2a;
+    color: #fff;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#navbar .git-logo {
+    width: 100px;
+    height: auto;
+}
+
+#navbar h1 {
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+}
+
+#navbar ul {
+    list-style: none;
+}
+
+#navbar ul li {
+    margin-bottom: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #444;
+}
+
+/* Contenido principal */
+#main-doc {
+    margin-left: 270px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Estilo de las secciones */
+.main-section {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-section header {
+    margin-bottom: 20px;
+}
+
+.main-section h2 {
+    color: #333;
+}
+
+.main-section p {
+    margin-bottom: 10px;
+}
+
+.main-section pre {
+    background-color: #282c34;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.main-section code {
+    font-family: monospace;
+    display: inline-block;
+}
+
+.main-section ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.main-section ul li {
+    margin-bottom: 8px;
+}
+
+i {
+    color: #4CAF50;
+}
+
+/* Estilo de pie de página */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: #2a2a2a;
+    padding: 20px 0;
+    border-top: 3px solid #444;
+    margin-top: auto;
+}
+
+/* Media Query para móviles (Pantallas de hasta 600px) */
+@media (max-width: 600px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+    }
+
+    #navbar h1 {
+        font-size: 1.4rem;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .main-section {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .main-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* Media Query para tablets y laptops (Pantallas de entre 600px y 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #navbar {
+        width: 200px;
+    }
+
+    #navbar h1 {
+        font-size: 1.4rem;
+    }
+
+    #main-doc {
+        margin-left: 220px;
+    }
+
+    .main-section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .main-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+/* Media Query para pantallas grandes (más de 1024px) */
+@media (min-width: 1025px) {
+    #navbar {
+        width: 250px;
+    }
+
+    #main-doc {
+        margin-left: 270px;
+    }
+
+    .main-section {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .main-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

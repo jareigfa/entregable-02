@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Coding Academy Survey Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Coding Masters! We Want to Hear from You!</h1>
+    <p id="description">Thank you for taking the time to help us improve the coding experience.</p>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <form id="survey-form">
+      <section id="personal-info">
+        <h2>Personal Information</h2><br>
+        <label id="name-label" for="name"><b>Name:</b></label>
+        <input id="name" type="text" name="name" class="form" required placeholder="Full Name"><br><br>
+        <label id="email-label" for="email"><b>Email:</b></label>
+        <input id="email" type="email" name="email" class="form" required placeholder="example@email.com"><br><br>
+        <label id="number-label" for="number"><b>Age:</b></label>
+        <input id="number" type="number" name="number" class="form" min="6" max="100" placeholder="Enter your age"><br><br>
+      </section>
+
+      <section id="programming-lang">
+        <h2>Programming Language</h2><br>
+        <label><b>Programming language I am most proficient in:</b></label><br>
+        <select id="dropdown" name="code-lang" class="form">
+          <option value="C">C (Programming Language)</option>
+          <option value="C#">C#</option>
+          <option value="C++">C++</option>
+          <option value="HTML CSS">HTML CSS</option>
+          <option value="Js">JavaScript</option>
+          <option value="Java">Java</option>
+          <option value="Python">Python</option>
+        </select><br><br>
+      </section>
+
+      <section id="skill-level">
+        <h2>Skill Level</h2><br>
+        <label><b>Select the programming language level:</b></label><br>
+        <input type="radio" class="radio-inline" name="level" value="beginner" checked> Beginner<br>
+        <input type="radio" class="radio-inline" name="level" value="student"> Student<br>
+        <input type="radio" class="radio-inline" name="level" value="advanced"> Advanced<br>
+        <input type="radio" class="radio-inline" name="level" value="professional"> Professional<br><br>
+      </section>
+
+      <section id="study-methods">
+        <h2>Study Methods</h2><br>
+        <label><b>What methods do you use to study programming?</b></label><br>
+        <input type="checkbox" name="op1" value="books"> Programming books<br>
+        <input type="checkbox" name="op2" value="courses"> Online courses<br>
+        <input type="checkbox" name="op3" value="platforms"> Web platforms<br>
+        <input type="checkbox" name="op4" value="person"> In-person classes<br>
+        <input type="checkbox" name="op5" value="podcast"> Podcasts<br>
+        <input type="checkbox" name="op6" value="projects"> Self-taught projects<br><br>
+      </section>
+
+      <section id="learning-websites">
+        <h2>Other Learning Websites</h2><br>
+        <label><b>Do you use these other websites to learn programming?</b></label><br>
+        <input type="checkbox" name="code1" value="codeacademy"> Codeacademy<br>
+        <input type="checkbox" name="code2" value="khanacademy"> Khan Academy<br>
+        <input type="checkbox" name="code3" value="leetCode"> Leet Code<br><br>
+      </section>
+
+      <section id="comments">
+        <h2>Suggestions</h2><br>
+        <label>Do you have any suggestions for this survey?</label><br>
+        <textarea id="comments" style="height:120px;" class="form" placeholder="Feel free to leave a review..."></textarea><br><br>
+        <button id="submit" type="submit" class="form">Submit</button>
+      </section>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Coding Academy by jareigfa. All rights reserved.</p>
+  </footer>
+</body>
+<!-- Test de prueba -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

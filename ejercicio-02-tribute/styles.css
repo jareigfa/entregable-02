@@ -1,0 +1,334 @@
+/* Mobile */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  #main {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #title {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  #main p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  
+  #img-div {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  #image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #img-caption {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-top: 10px;
+  }
+  
+  #tribute-info {
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  #tribute-info h3 {
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 15px;
+  }
+  
+  #tribute-info ul {
+    list-style-type: none;
+    line-height: 1.8;
+  }
+  
+  #tribute-info ul li {
+    font-size: 16px;
+    color: #2c3e50;
+  }
+  
+  #tribute-info ul li strong {
+    font-weight: bold;
+    color: #2980b9;
+  }
+  
+  blockquote {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #2c3e50;
+    border-left: 5px solid #2980b9;
+    font-style: italic;
+  }
+  
+  blockquote cite {
+    display: block;
+    font-size: 14px;
+    text-align: right;
+    color: #7f8c8d;
+  }
+  
+  #tribute-link {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #tribute-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries */
+  
+  /* Most of the Smartphones Mobiles (Portrait) */
+  @media (min-width: 320px) and (max-width: 480px) {
+    #main {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    #title {
+      font-size: 24px;
+    }
+  
+    #main p {
+      font-size: 14px;
+    }
+  
+    #tribute-info h3 {
+      font-size: 18px;
+    }
+  
+    #tribute-info ul li {
+      font-size: 12px;
+    }
+  
+    blockquote {
+      font-size: 14px;
+    }
+  
+    #image {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    #img-caption {
+      font-size: 12px;
+    }
+  
+    #tribute-link {
+      font-size: 14px;
+    }
+  }
+  
+  /* Low Resolution Tablets, Mobiles (Landscape) (B/w 481px to 767px) */
+  @media (min-width: 481px) and (max-width: 767px) {
+    #main {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    #title {
+      font-size: 32px;
+    }
+  
+    #main p {
+      font-size: 17px;
+    }
+  
+    #tribute-info h3 {
+      font-size: 22px;
+    }
+  
+    #tribute-info ul li {
+      font-size: 15px;
+    }
+  
+    blockquote {
+      font-size: 17px;
+    }
+  }
+  
+  /* Tablets Portrait (B/w 768px to 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    #main {
+      width: 80%;
+      padding: 25px;
+    }
+  
+    #title {
+      font-size: 36px;
+    }
+  
+    #main p {
+      font-size: 18px;
+    }
+  
+    #tribute-info h3 {
+      font-size: 24px;
+    }
+  
+    #tribute-info ul li {
+      font-size: 16px;
+    }
+  
+    blockquote {
+      font-size: 18px;
+    }
+  }
+  
+  /* Tablets, Ipads (landscape) (B/w 768px to 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #main {
+      width: 75%;
+      padding: 30px;
+    }
+  
+    #title {
+      font-size: 38px;
+    }
+  
+    #main p {
+      font-size: 19px;
+    }
+  
+    #tribute-info h3 {
+      font-size: 26px;
+    }
+  
+    #tribute-info ul li {
+      font-size: 17px;
+    }
+  
+    blockquote {
+      font-size: 20px;
+    }
+  }
+  
+  /* Laptops, Desktops (B/w 1025px to 1280px) */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    #main {
+      width: 70%;
+      padding: 35px;
+    }
+  
+    #title {
+      font-size: 40px;
+    }
+  
+    #main p {
+      font-size: 20px;
+    }
+  
+    #tribute-info h3 {
+      font-size: 28px;
+    }
+  
+    #tribute-info ul li {
+      font-size: 18px;
+    }
+  
+    blockquote {
+      font-size: 22px;
+    }
+  }
+  
+  /* Laptops, Desktops (1281px to higher resolution desktops) */
+  @media (min-width: 1281px) {
+    #main {
+      width: 65%;
+      padding: 40px;
+    }
+  
+    #title {
+      font-size: 42px;
+    }
+  
+    #main p {
+      font-size: 22px;
+    }
+  
+    #tribute-info h3 {
+      font-size: 30px;
+    }
+  
+    #tribute-info ul li {
+      font-size: 20px;
+    }
+  
+    blockquote {
+      font-size: 24px;
+    }
+  }
+  
+  /* Portrait */
+  @media screen and (orientation: portrait) {
+  }
+  
+  /* Landscape */
+  @media screen and (orientation: landscape) {
+  }
+  
+  /* CSS for iPhone, iPad, and Retina Displays */
+  
+  /* Non-Retina */
+  @media screen and (-webkit-max-device-pixel-ratio: 1) {
+  }
+
+  /* Retina */
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+  }
+  
+  /* iPhone Portrait */
+  @media screen and (max-device-width: 480px) and (orientation: portrait) {
+  }
+  
+  /* iPhone Landscape */
+  @media screen and (max-device-width: 480px) and (orientation: landscape) {
+  }
+  
+  /* iPad Portrait */
+  @media screen and (min-device-width: 481px) and (orientation: portrait) {
+  }
+  
+  /* iPad Landscape */
+  @media screen and (min-device-width: 481px) and (orientation: landscape) {
+  }
