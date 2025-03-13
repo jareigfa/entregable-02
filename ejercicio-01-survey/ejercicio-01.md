@@ -15,6 +15,8 @@ Elige 1 de los 5 ejercicios del itinerario de Responsive Web Design de FreeCodeC
 
 #### Survey Form
 
+Enlace CodePen: https://codepen.io/jareigfa/full/ogNGYvG
+
 Capturas de pantalla: 
 
 ![Captura 01](01.jpg)

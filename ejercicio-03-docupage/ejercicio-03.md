@@ -12,6 +12,8 @@ Elige 1 de los 5 ejercicios del itinerario de Responsive Web Design de FreeCodeC
 
 #### Technical Documentation Page
 
+Enlace CodePen: https://codepen.io/jareigfa/full/mydBORQ
+
 Capturas de pantalla:
 
 ![Captura 01](01.jpg)
